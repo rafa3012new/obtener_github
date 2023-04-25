@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Obtener Github</title>
+    <link rel="stylesheet" href="obtener_github.css" type="text/css">
+
+</head>
+<body>
+   <div class="principal">
+      <div><h1>Acceso a una API</h1></div>
+      <div class="panelbotones">
+        <div><a href="#" onclick="return obtener_github()">Ver el contenido de API</a></div>
+      </div>
+      <div>
+         <h2 id="texto"></h2>
+      </div>
+      <br>
+
+      <figure>
+         <figcaption id="mifigcap"></figcaption>
+         <img id="imagen" src="" alt="">
+      </figure>
+
+      <div id="listado">
+         <h4 id="titulo_json"></h4>
+         <select name="claves" id="lista_json" onchange="return lista_cambio()">
+
+         </select>
+         <p id="valor"></p>
+      </div>
+   </div>
+   <script src="obtener_github.js"></script>
+</body>
+</html>
